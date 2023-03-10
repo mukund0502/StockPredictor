@@ -1,0 +1,102 @@
+#header{
+    display: flex;
+    flex-direction: row  ;
+    width: fit-content;
+    margin: auto;
+
+}
+#header ul{
+    cursor: pointer;
+    border: 1px solid black ;
+    border-radius: 50px;
+    margin: 0px 5px;
+    padding: 7px 10px ;
+    /* margin: auto; */
+    align-items: center;
+    /* color: red; */
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#heading{
+    margin: 15px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+    font-size: 100px;
+    text-justify: auto;
+    color: rgba(58, 51, 51, 0.7);
+}
+body{
+    /* background-image: url('../res/bg1.jpg'); */
+    /* background-color: rgb(255, 255, 255); */
+    /* background-image: url('bg1.jpg'); */
+    background-blend-mode:difference;
+    background-size:180%;
+}
+
+.profile{
+    /* transition-delay: 1s; */
+    position:fixed;
+    z-index: 10;
+    top: -900px;
+    left: 40vw;
+    margin: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    background-color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, .6);
+}
+
+#close{
+    border-radius: 50px;
+    border-width: 0px;
+    background-color: red;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px 0px;
+    
+}
+.buttons{
+    width: fit-content;
+    margin:auto;
+}
+.edit{
+    background-color: yellow;
+    border-radius: 40px;
+    border-width: 0px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px 0px;
+
+
+}
+#save{
+    background-color: rgb(80, 229, 137);
+    border-radius: 40px;
+    border-width: 0px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px 0px;
+
+
+}
+
+.abc{
+    width: fit-content;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: transparent;
+    border-width: 0px 0px 1px 0px;
+    outline: none;
+
+}
+#table{
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 10px;
+}

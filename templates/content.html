@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/content.css') }}">
+    <title>Hi! {{person[0]}}</title>
+</head>
+<body>
+    <header id="header">
+        <ul><a href="/">Sign out</a></ul>
+        <ul id="profilebtn">Profile</ul>
+    </header>
+    <h1 id="heading">Hi, {{person[1]}}</h1>
+<input type="text" name="" size="10" id="">
+    <div class="profile">
+        <button id="close">close</button>
+        <form action="/profile/{{person[0]}}" method="POST" >
+            <table border="0px" id="table" >
+                <tr>
+                    <td id="fname">{{person[1]}}</td>
+                    <td id="lname">{{person[2]}}</td>
+                </tr>
+                <tr>
+                    <td >Email id :</td>
+                    <td id="email">{{person[3]}}</td>
+                </tr>
+                <tr>
+                    <td>username :</td>
+                    <td id="uname">{{person[0]}}</td>
+                </tr>
+                <tr>
+                    <td>Password :</td>
+                    <td id="password">{{person[5]}}</td>
+                </tr>
+            </table>
+            <div class="buttons">
+                <input type="button" class = "edit" value="Edit info">
+                
+            </div>
+            
+        </form>
+        
+    </div>
+
+    <table border="1">
+        <tr>
+            <th>Fav Stocks</th>
+            <th>Condition</th>
+        </tr>
+        {% for uname in person[4] %}
+        <tr>
+            <td>
+                {{uname}} 
+            </td>
+            <td>
+                update
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+    <h2 align = "center">Update Your Fav Stocks</h2>
+    <form action="/content/{{person[0]}}" method="POST">  
+        <table border="1" align="center">
+            <th></th>
+            <th>Company Name</th>
+            <th>Symbol</th>
+            <th>Industry</th>
+            {% for uname in nifty100 %}
+                <tr>
+                    {% if uname[3]=='1' %}
+                        <td><input type="checkbox" name="{{uname[1]}}" id="" checked></td>
+                    {% else %}
+                        <td><input type="checkbox" name="{{uname[1]}}" id="" ></td>
+                    {% endif %}
+                    
+                    <td>{{uname[0]}}</td>
+                    <td>{{uname[1]}}</td>
+                    <td>{{uname[2]}}</td> 
+                </tr>
+                
+            {% endfor %}
+        </table>
+        <div class="savechange" style="margin: auto;  width: fit-content;">
+            <input type="submit" value="Save changes" >
+        </div>
+        
+    </form>
+</body>
+<script src="{{ url_for('static', filename='js/content.js') }}"></script>
+</html>

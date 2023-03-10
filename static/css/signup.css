@@ -1,0 +1,91 @@
+
+#heading{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+    font-size: 40px;
+    margin-top: 7%;
+    text-justify: auto;
+    color: rgba(255, 255, 255, 0.7);
+}
+body{
+    background-image: url('bg1.jpg');
+    background-blend-mode:difference;
+    background-size:180%;
+}
+.messege{
+    text-align: center  ;
+    margin: 5px;
+    color:red
+}
+#form{
+    border-radius: 20px;
+    background-color: rgba(240, 221, 209, 0.6);
+    padding: 30px 20px;
+    width: fit-content;
+    /* margin-right: 5%; */
+    
+    margin: auto;
+    margin-top: 7%;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, .6);
+}
+
+
+.leftalign{
+    width: fit-content;
+    padding: 10px;
+    text-align: left;
+}
+
+#signup{
+    
+    /* width: 100%; */
+    align-items: center;
+    margin:  10px;
+}
+
+#signup td{
+    font-family: 'Roboto', sans-serif;
+
+    /* text-align: center; */
+    font-size: 20px;
+    /* width: 50%; */
+}
+#signup tr{
+    margin: 100px;
+}
+
+.signin{
+    margin: 10px;
+    text-align: center;
+}
+
+#signup td input{
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    /* border: 0px ; */
+    border-width: 0px 0px 2px 0px ;
+    border-color: black;
+    background-color: transparent;
+}
+
+#fname{
+}
+
+input{
+    font-size: 20px;
+}
+
+#submitbtn{
+    border: 0px;
+    box-shadow: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    padding: 7px;
+    background-color: rgb(235, 201, 150);
+}
+#submit{
+    width: fit-content;
+    margin: auto;
+}

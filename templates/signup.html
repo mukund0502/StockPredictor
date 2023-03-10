@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Sign up</title>
+</head>
+<body>
+    <h1 id="heading">Sign up </h1>
+    <form action="" method="post" id="form">
+        
+        <table id="signup">
+            <tr>
+                <td class="leftalign">First name:</td>
+                <td><input type="text" name="fname" id="fname" ></td>
+            </tr>
+            <tr>
+                <td class="leftalign">Last name:</td>
+                <td><input type="text" name="lname" id="lname"></td>
+            </tr>
+            <tr>
+                <td class="leftalign">User name:</td>
+                <td><input type="text" name="uname" id="uname"></td>
+            </tr>
+            <tr>
+                <td class="leftalign"> Email id:</td>
+                <td> <input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td class="leftalign">Password:</td>
+                <td><input type="password" name="password1" id="password1"></td>
+            </tr>
+            <tr>
+                <td class="leftalign">Confirm password:</td>
+                <td><input type="password" name="password2" id="password2"></td>
+            </tr>
+        </table>   
+        <div class="signin">Already have an account? <a href="/">sign in</a> </div>
+        <div class="messege"> {{info}}</div>
+        <div id="submit">
+            <input type="submit" value="Sign Up" id="submitbtn">
+        </div> 
+        
+    </form>
+</body>
+<script src="{{ url_for('static', filename='js/signup.js') }}"></script>
+</html>

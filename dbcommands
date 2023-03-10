@@ -1,0 +1,7 @@
+create database stock 
+
+use stock;
+
+create table user(uname varchar(20), fname varchar(20), lname varchar(20), email varchar(30), pass varchar(30));
+
+create table favstock(uname varchar(20), stockname varchar(30));
