@@ -130,6 +130,7 @@ def updateDB(uname,symbol):
     return
 
 
+
 def fetchdetails(uname):
     cur = db.connection.cursor()
     abc = "select * from user where uname = %s"
