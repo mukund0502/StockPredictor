@@ -112,6 +112,7 @@ def content(uname):
     person = [uname,fname,lname,email, fav, password]
     symbol, nifty100 = fetchnifty100(fav)
     
+    
     return render_template('content.html', person = person, nifty100 = nifty100)
 
 
